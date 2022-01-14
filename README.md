@@ -4,9 +4,9 @@
 * [Stack](\data_structure\stack.py)
 * [Queue](\data_structure\queue.py)
 
-# 2. 정렬
+### 2. 정렬
 
-# 3. 탐색
+### 3. 탐색
 
-# 4. 프로그래머스
+### 4. 프로그래머스
 * [기능개발](\programmers\기능개발.py)
