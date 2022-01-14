@@ -1,7 +1,7 @@
 ## coding_test
 
 ### 1. 자료구조
-* [스택](coding_test\data_structure\stack.py)
+* [스택](\data_structure\stack.py)
 * [큐](coding_test\data_structure\queue.py)
 * [해시](coding_test\data_structure\hash.py)
 ### 2. 정렬
