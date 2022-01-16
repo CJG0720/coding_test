@@ -4,7 +4,8 @@
 * [스택](/data_structure/stack.py)
 * [큐](/data_structure/queue.py)
 * [해시](/data_structure/hash.py)
-* [힙](/data_structure/heap.py)
+* [최소힙](/data_structure/min_heap.py)
+
 ### 2. 정렬
 
 ### 3. 탐색

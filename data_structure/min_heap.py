@@ -9,7 +9,7 @@ import heapq as hq
 nums = [5, 3, 6, 0, 5, 0, 2, 4, 0, -1]
 a = []
 
-for num in nums:
+'''for num in nums:
     if num == -1:
         break
     elif num == 0:
@@ -19,3 +19,4 @@ for num in nums:
             print(hq.heappop(a))    #root를 pop
     else:
         hq.heappush(a, num)
+'''
