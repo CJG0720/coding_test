@@ -1,13 +1,27 @@
+'''
+큐
+- deque() 로 선언
+- dq.popleft()  왼쪽에서 큐 요소 출력
+- dq.append()   오른쪽으로 큐 요소 입력
+
+'''
+
 from collections import deque
-n = 8
-k = 3
 
-deq = deque([i+1 for i in range(n)])    
+nums = [1,2,3,4,5,0,-1]
+dq = deque()
 
-while deq:
-    for _ in range(k-1):
-        cur = deq.popleft()     # 빼고
-        deq.append(cur)         # 넣고
-    deq.popleft()               # 3번째는 제거
-    if len(deq) == 1:           # 1개만 남으면
-        print(deq[-1])          # 7
+'''
+nums의 요소를 스택에 push 하다가
+0이 나오면 popleft()
+-1이 나오면 종료
+'''
+for i in nums:
+    if i == 0:
+        dq.popleft()
+    elif i == -1:
+        break
+    else:
+        dq.append(i)
+
+print(dq)            # dq = [2, 3, 4, 5]

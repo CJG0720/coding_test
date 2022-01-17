@@ -1,28 +1,24 @@
 '''
-후위표기식을 스택으로 연산
+스택
+- 리스트로 선언
+- stack.append() 제일 뒤(-1)에 있는 요소 출력
+- stack.pop()  제일 뒤(-1)에 요소 입력
 '''
 
-num = '352+*9-'
-operator = ['+', '-', '*', '/']
+nums = [1,2,3,4,5,0,-1]
+stack = []
 
-def postifx(num):
-    stack = []
-    for i in num:
-        if i.isdecimal() == True:               # 0~9 == isdecimal() == True 
-            stack.append(int(i))
-        else:
-            if i == '+':                        #operator
-                x, y = stack.pop(), stack.pop()
-                stack.append(x+y)
-            elif i == '-':
-                x, y = stack.pop(), stack.pop()
-                stack.append(-(x-y))
-            elif i == '/':
-                x, y = stack.pop(), stack.pop()
-                stack.append(x/y)            
-            elif i == '*':
-                x, y = stack.pop(), stack.pop()
-                stack.append(x*y)
-    return stack
+'''
+nums의 요소를 스택에 push 하다가
+0이 나오면 pop()
+-1이 나오면 종료
+'''
+for i in nums:
+    if i == 0:
+        stack.pop()
+    elif i == -1:
+        break
+    else:
+        stack.append(i)
 
-print(postifx(num))                             # 12
+print(stack)            # stack = [1, 2, 3, 4]
