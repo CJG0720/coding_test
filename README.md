@@ -1,10 +1,10 @@
 ## 
 
 ### 1. 자료구조
-* [스택](/data_structure/stack.py)
-* [큐](/data_structure/queue.py)
-* [해시](/data_structure/hash.py)
-* [최소힙](/data_structure/min_heap.py)
+* [스택](/data_structure/스택.py)
+* [큐](/data_structure/큐.py)
+* [해시](/data_structure/해시.py)
+* [최소힙](/data_structure/최소힙.py)
 
 ### 2. 정렬
 
